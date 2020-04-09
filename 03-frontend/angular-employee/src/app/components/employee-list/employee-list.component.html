@@ -1,0 +1,41 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2>Employee List</h2>
+  </div>
+  <div class="panel-body">
+
+<table class="table table-striped">
+
+  <thead class="thead-dark">
+  <tr>
+    <th>Employee Id</th>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Role</th>
+    <th>Computer Access Availability</th>
+    <th>Branch Name</th>
+    <th>Head Set Availability</th>
+    <th>Work From Home</th>
+    <!-- <th>Date</th> -->
+  </tr>
+  </thead>
+
+  <tbody>
+  <tr *ngFor="let tempEmployee of employees">
+    <td>{{tempEmployee.id}}</td>
+    <td>{{tempEmployee.firstName}}</td>
+    <td> {{tempEmployee.lastName}}</td>
+    <td>{{tempEmployee.role}} </td>
+    <td>{{tempEmployee.computerAccess}} </td>
+    <td> {{tempEmployee.branchName}}  </td>
+    <td>{{tempEmployee.headset}}</td>
+    <td>{{tempEmployee.workFromHome}}</td>
+    <!-- <td>{{tempEmployee.date}}</td> -->
+    <!-- <button (click)="employeeDetails(employees.id)" class="btn btn-info" style="margin-left: 10px">Details</button> -->
+   </tr>
+
+  </tbody>
+</table>
+<div>
+  </div>
+</div>

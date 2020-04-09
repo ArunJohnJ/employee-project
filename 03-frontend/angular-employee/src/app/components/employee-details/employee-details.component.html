@@ -1,0 +1,35 @@
+<h2>Employee Details</h2> 
+
+<hr/>
+<div *ngIf="employee">
+    <div>
+        <label><b> Id: </b></label> {{employee.id}}
+      </div> 
+  <div>
+    <label><b>First Name: </b></label> {{employee.firstName}}
+  </div>
+  <div>
+    <label><b>Last Name: </b></label> {{employee.lastName}}
+  </div>
+  <div>
+    <label><b>Role: </b></label> {{employee.role}}
+  </div>  
+  <div>
+    <label><b>Branch Name </b></label> {{employee.branchName}}
+  </div> 
+  <!-- <div>
+    <label><b>Date: </b></label> {{employee.date}}
+  </div>  -->
+  <div>
+    <label><b>Computer Access Availability: </b></label> {{employee.computerAccess}}
+  </div> 
+  <div>
+    <label><b>HeadSet Availability: </b></label> {{employee.headset}}
+  </div> 
+  <div>
+    <label><b>Working From Home: </b></label> {{employee.workFromHome}}
+  </div> 
+  </div>
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to All Employees</button><br>

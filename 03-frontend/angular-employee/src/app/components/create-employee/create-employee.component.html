@@ -1,0 +1,59 @@
+<h3>Employee Daily Survey</h3>
+<div [hidden]="submitted" style="width: 400px;">
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group"> 
+        <label for="id">Employee Id</label>
+        <input type="text" class="form-control" id="id" required [(ngModel)]="employee.id" name="id">
+      </div>
+    <div class="form-group">
+      <label for="firstNname">First Name</label>
+      <input type="text" class="form-control" id="firstName" required [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" required [(ngModel)]="employee.lastName" name="lastName">
+    </div>
+
+    <div class="form-group">
+      <label for="role">Role</label>
+      <input type="text" class="form-control" id="role" required [(ngModel)]="employee.role" name="role">
+    </div>
+
+    <div class="form-group">
+        <label for="branch">Branch Name</label>
+        <input type="text" class="form-control" id="branchName" required [(ngModel)]="employee.branchName" name="branchName">
+      </div>
+
+      <!-- <div class="form-group">
+        <label for="date">Date</label>
+        <input type="date" class="form-control" id="date" required [(ngModel)]="employee.date" name="date">
+      </div> -->
+
+      <table>
+        <tr>
+
+      <div class="form-group">
+        <label for="computerAccess">Computer Access Availability</label>
+        <td><input type="radio" id="computerAccess" name="computerAccess" required [(ngModel)]="employee.computerAccess" value="Yes">Yes</td>
+        <td><input type="radio" id="computerAccess" name="computerAccess" required [(ngModel)]="employee.computerAccess" value="No">No</td>
+    </div>
+  </tr>
+  <tr>
+        <div class="form-group">
+        <label for="headset">HeadSet Availability</label>
+        <td><input type="radio" id="headset" name="headset" required [(ngModel)]="employee.headset" value="Yes">Yes</td>
+        <td><input type="radio" id="headset" name="headset" required [(ngModel)]="employee.headset" value="No">No</td>
+    </div>
+  </tr>
+  <tr>
+    <div class="form-group">
+        <label for="workFromHome">Working From Home</label>
+        <td><input type="radio" id="workFromHome" name="workFromHome" required [(ngModel)]="employee.workFromHome" value="Yes">Yes</td>
+        <td><input type="radio" id="workFromHome" name="workFromHome" required [(ngModel)]="employee.workFromHome" value="No">No</td>
+       </div>
+      </tr>
+      </table>
+    <button type="submit" class="btn btn-success">Submit</button>
+  </form>
+</div>
